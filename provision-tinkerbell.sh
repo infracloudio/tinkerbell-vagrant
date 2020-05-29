@@ -47,7 +47,7 @@ export TB_IPADDR="$provisioner_ip_address"
 export TB_REGUSER='tinkerbell'
 cd ~
 
-wget -qO- https://raw.githubusercontent.com/tinkerbell/tink/$tinkerbell_version/setup.sh | bash -x
+wget -qO- https://raw.githubusercontent.com/tinkerbell/tink/master/setup.sh | bash -x
 
 # provision the example hello-world workflow action.
 docker pull hello-world
